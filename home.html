@@ -72,18 +72,18 @@
 					============================================= -->
 					<nav id="primary-menu" class="not-dark">
 						<ul>
-							<li class="active"><a href="#home_start_div"><div>Home</div></a></li>
-							<li><a href="#what_we_do"><div>What We Do</div></a></li>
-							<li><a href="#about_us"><div>About us</div></a></li>
-							<li>
+							<li id="primary-menu-home"><a href="#home_start_div"><div>Home</div></a></li>
+							<li id="primary-menu-what-we-do"><a href="#what_we_do"><div>What We Do</div></a></li>
+							<li id="primary-menu-about-us"><a href="#about_us"><div>About us</div></a></li>
+							<li id="primary-menu-Services">
 								<a href="#services"> <div>Services</div> </a>
 								<ul>
-									<li><a href="#mobile_application"><div>Mobile Application</div></a></li>
-									<li><a href="#web_design_and_development_services"><div>Web Design & Development Services</div></a></li>
-									<li><a href="#digital_marketing"><div>Digital marketing</div></a></li>
+									<li id="secondary-menu-Services"><a href="#mobile_application"><div>Mobile Application</div></a></li>
+									<li id="secondary-menu-Services"><a href="#web_design_and_development_services"><div>Web Design & Development Services</div></a></li>
+									<li id="secondary-menu-Services"><a href="#digital_marketing"><div>Digital marketing</div></a></li>
 								</ul>
 							</li>
-						    <li><a href="#our_works"><div>Works | Clients</div></a></li>
+						    <li id="primary-menu-works-clients"><a href="#our_works"><div>Works | Clients</div></a></li>
 							<!-- <li><a href="contact_us.html"><div>Contact Us</div></a></li> -->
 						</ul>
 					</nav><!-- #primary-menu end -->
@@ -619,6 +619,53 @@
 				1200: { stagePadding: 200 }
 			},
 		});
+	</script>
+	<script>
+		// Menu Focus Underline Scripts
+		//initial load to make Menu focus
+		document.getElementById("primary-menu-home").classList.add('active');
+
+		function resetUIForMenu () {
+			document.getElementById("primary-menu-home").classList.remove('active');
+			document.getElementById("primary-menu-what-we-do").classList.remove('active');
+			document.getElementById("primary-menu-about-us").classList.remove('active');
+			document.getElementById("primary-menu-Services").classList.remove('active');
+			document.getElementById("primary-menu-works-clients").classList.remove('active');
+		    // document.getElementById().classList.add('MyClass');
+			// if ( document.getElementById("MyElement").classList.contains('MyClass') )
+			// document.getElementById("MyElement").classList.toggle('MyClass');
+         }
+
+		$('#primary-menu-home').click(changeClassHome);
+		function changeClassHome(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-home").classList.add('active');
+        }
+
+        $('#primary-menu-what-we-do').click(changeClassWhatWeDo);
+		function changeClassWhatWeDo(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-what-we-do").classList.add('active');
+        }
+
+        $('#primary-menu-about-us').click(changeClassAboutUs);
+		function changeClassAboutUs(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-about-us").classList.add('active');
+        }
+
+		$('#primary-menu-Services').click(changeClassServices);
+		$('#secondary-menu-Services').click(changeClassServices);
+		function changeClassServices(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-Services").classList.add('active');
+        }
+
+        $('#primary-menu-works-clients').click(changeClassWorksClients);
+		function changeClassWorksClients(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-works-clients").classList.add('active');
+        }
 	</script>
 
 </body>
