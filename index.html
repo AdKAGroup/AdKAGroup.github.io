@@ -3,38 +3,47 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
-
+	<meta name="author" content="adka" />
+   <!-- browser Icon
+	============================================= -->
+    
+    <link rel="shortcut icon" href="images/custome_change/images/browser_shortcut_icon.ico">
+    
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-
-	<!-- One Page Module Specific Stylesheet -->
-	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
-	<!-- / -->
-
-	<!-- XMAS Demo Specific Stylesheet -->
-	<link rel="stylesheet" href="demos/xmas/xmas.css" type="text/css" />
-	<!-- / -->
-
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <!-- Seo Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="business/seo.css" type="text/css" />
+	<!-- / -->
+
+	<!-- Business Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="business/business.css" type="text/css" />
+	<link rel="stylesheet" href="business/css/fonts.css" type="text/css" />
+	<!-- / -->
+
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="one-page/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link rel="stylesheet" href="demos/xmas/css/colors.css" type="text/css" />
+	<!-- Theme Color
+	============================================= -->
+	<link rel="stylesheet" href="business/css/colors.css" type="text/css" />
 
 	<!-- Document Title
 	============================================= -->
-	<title>Christmas | Canvas</title>
+	<title>ADKA</title>
 
 </head>
 
@@ -42,116 +51,535 @@
 
 	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix">
-
+	<div id="home_start_div" class="clearfix">
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header static-sticky show-on-sticky" data-sticky-offset="full" data-sticky-offset-negative="300">
-
+		<header id="header" class="transparent-header dark full-header" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full">
 			<div id="header-wrap">
-
 				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
+					<div id="primary-menu-trigger">
+						<i class="icon-reorder"></i>
+					</div>
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo"><img src="images/custome_change/images/logo.jpeg" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo"><img src="images/custome_change/images/logo.jpeg" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
+						<a class="standard-logo" data-dark-logo="images/business/images/adkatech_logo_on_black_background.svg">
+							<img src="images/business/images/adkatech_logo_on_white_background.svg" alt="ADKA">
+						</a>
+						<a class="retina-logo" data-dark-logo="images/business/images/adkatech_logo_on_black_background.svg">
+							<img src="images/business/images/adkatech_logo_on_white_background.svg" alt="ADKA">
+						</a>
+					</div>
+					<!-- #logo end -->
 
 					<!-- Primary Navigation
 					============================================= -->
-					<nav id="primary-menu">
-
-						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-							<li><a href="#" data-href="#wrapper"><div>Top</div></a></li>
-							<li><a href="#" data-href="#section-overview"><div>Overview</div></a></li>
-							<li><a href="#" data-href="#section-offers"><div>Offers</div></a></li>
-							<li><a href="#" data-href="#section-categories"><div>Categories</div></a></li>
-							<li><a href="#" data-href="#footer"><div>Subscribe</div></a></li>
+					<nav id="primary-menu" class="not-dark">
+						<ul>
+							<li id="primary-menu-home"><a href="#home_start_div"><div>Home</div></a></li>
+							<li id="primary-menu-what-we-do"><a href="#what_we_do"><div>What We Do</div></a></li>
+							<li id="primary-menu-about-us"><a href="#about_us"><div>About us</div></a></li>
+							<li id="primary-menu-Services">
+								<a href="#services"> <div>Services</div> </a>
+								<ul>
+									<li id="secondary-menu-Services"><a href="#mobile_application"><div>Mobile Application</div></a></li>
+									<li id="secondary-menu-Services"><a href="#web_design_and_development_services"><div>Web Design & Development Services</div></a></li>
+									<li id="secondary-menu-Services"><a href="#digital_marketing"><div>Digital marketing</div></a></li>
+								</ul>
+							</li>
+						    <li id="primary-menu-works-clients"><a href="#our_works"><div>Works | Clients</div></a></li>
+							<!-- <li><a href="contact_us.html"><div>Contact Us</div></a></li> -->
 						</ul>
-
 					</nav><!-- #primary-menu end -->
-
 				</div>
-
 			</div>
+		</header>
+		<!-- #header end -->
 
-		</header><!-- #header end -->
-
-		<!-- Slider
+		<!-- Home Slider
 		============================================= -->
-		<section id="slider" class="slider-element full-screen" data-height-md="800" data-height-sm="850" data-height-xs="850">
-
-			<div class="full-screen dark section nopadding nomargin noborder ohidden" style="background-image: url('images/custome_change/images/hero.jpg'); background-size: cover; background-position: center center;" data-height-md="800" data-height-sm="850" data-height-xs="850">
-
-				<div class="snowfall"></div>
-
-				<div class="container center">
-					<div class="vertical-middle">
-						<div class="vertical-middle-offset">
-							<div class="emphasis-title inline-block">
-								<h1 style="font-size:10em;" class="font-body t700 ls3">AdKA</h1>
-								<h1 style="font-size:2.5em;" class="font-body t700 ls3 uppercase">  </h1>
-								<h1 style="font-size:2.5em;" class="font-body t700 ls3 uppercase">Coming Soon...</h1>
+		<section id="home_slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix" data-loop="true">
+			<div class="slider-parallax-inner">
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark" style="background-image: url('images/business/images/slider/slider_1.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 class="font-primary nott">Digital Transfomation</h2>
+									<p class="t300 font-primary d-none d-sm-block">We work to enable your idea, digitalize your business and create your online Gateway.</p>
+									<a href="#contact_us" class="button button-rounded button-large nott ls0 font-primary">Get Started</a>
+								</div>
 							</div>
-							<div class="clear"></div>
-							<!-- <div id="countdown-xmas" class="xmas-countdown bottommargin-lg divcenter" style="max-width:700px;"></div> -->
 						</div>
-					</div>
-				</div>
 
-				<!-- <div class="video-wrap">
-					<div class="video-overlay" style="background: rgba(0,0,0,0.2);"></div>
-				</div> -->
-
-				<a href="#" data-scrollto="#section-offers" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-			</div>
-
-		</section><!-- #slider end -->
-
-		
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="dark page-section nopadding noborder" style="padding-top:10px;">
-
-			<div style="background: url('demos/xmas/images/bulbs.png') repeat-x center top; background-size: auto 100%; height: 54px;"></div>
-
-			<div class="snowfall" style="opacity:0.2;"></div>
-
-			<div class="container center">
-				<div class="footer-widgets-wrap">
-
-					<div class="row divcenter clearfix">
-
-						<div class="col-lg-6 offset-lg-3">
-
-							<div class="widget subscribe-widget clearfix">
-								<h4 style="margin-bottom:20px;">More Discounts on Subscription</h4>
-
-								<div class="widget-subscribe-form-result"></div>
-								<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="nobottommargin">
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Your Email Address">
-									<button class="button button-border button-circle button-light topmargin-sm" type="submit">Subscribe Now</button>
-								</form>
+						<div class="swiper-slide dark" style="background-image: url('images/business/images/slider/slider_2.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 class="font-primary nott">We are your Technical Arm.</h2>
+									<a href="#contact_us" class="button button-rounded button-large nott ls0 font-primary">Get Started</a>
+								</div>
 							</div>
+						</div>
 
+						<div class="swiper-slide dark" style="background-image: url('images/business/images/slider/slider_3.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<h2 class="font-primary nott">We Build Together<br/>We Grow Together</h2>
+									<a href="#contact_us" class="button button-rounded button-large nott ls0 font-primary">Get Started</a>
+								</div>
+							</div>
 						</div>
 
 					</div>
-
+					<!-- Slider Arrows
+					============================================= -->
+					<div class="slider-arrow-left" class="nobg"><i class="icon-line-arrow-left"></i></div>
+					<div class="slider-arrow-right" class="nobg"><i class="icon-line-arrow-right"></i></div>
 				</div>
+
+				<!-- Slider Mouse Icon
+				============================================= -->
+				<a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><img class="infinite animated fadeInDown" src="images/business/images/mouse.svg" alt="ADKA" ></a>
+			</div>
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+                 	<!-- What We Do
+					============================================= -->
+			    <div id="what_we_do" class="content-wrap nobottompadding" style="z-index: 1;">
+				<div class="container topmargin clearfix">
+					<div class="heading-block center noborder" data-heading="W"> <h3>What We Do</h3> </div>
+					<div class="row clearfix">
+						<div class="center col-lg-8 offset-lg-2 bottommargin">
+							<h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">
+								<b>W</b>e belive in <span class="t-rotate color">Clarity,Commitment,Outstanding,Inspiration,Innovation,Evolution</span>
+								<br/> 
+								<b>W</b>e specialize in premium web and mobile applications development including digital marketing for your business.
+                                <br/>
+                                <b>W</b>e do not only build your platform, but we also guide you through the development journey .
+                                <br/>
+                                <b>W</b>e are going to build your platform blocks step by step, <b>Our Goal is to Grow together.</b>
+                                <br/>
+                                This, in turn, helps you communicate your brand’s perspective while catching up with the most current web and mobile application development trends,<b> We are your technical arm.</b>
+                             </h3>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+                </div>
+
+                 	<!-- services
+					============================================= -->
+          <div id="services" class="content-wrap nobottompadding" style="z-index: 1;">
+				<div class="container topmargin clearfix">
+					<div class="heading-block center noborder" data-heading="S"> <h3>Services</h3> </div>
+					<div class="row clearfix">
+                        <!-- Features colomns "Services" 
+                     	============================================= -->
+						<div id="mobile_application" class="row clearfix">
+							<div class="col-lg-4 bottommargin-sm">
+								<div class="feature-box media-box fbox-bg">
+									<div class="fbox-media">
+										<!-- <a href="home-mobile-app-development.html"><img class="image_fade" src="images/business/images/featured/mob.jpg"/></a> -->
+										<img class="image_fade" src="images/business/images/featured/mob.jpg"/>
+									</div>
+									<div class="fbox-desc">
+										<h3 class="nott ls0 t600"> Mobile App Development 
+											<span class="subtitle font-secondary t300 ls0">Don’t leave ideas in the pipeline, let’s transform them into Mobile Apps</span>
+                                        </h3>
+										<!-- <a href="home-mobile-app-development.html" class="button-link">Read More</a> -->
+									</div>
+								</div>
+							</div>
+							<div id="web_design_and_development_services" class="col-lg-4 bottommargin-sm">
+								<div class="feature-box media-box fbox-bg">
+									<div class="fbox-media">
+										<!-- <a href="home-web-development.html"><img class="image_fade" src="images/business/images/featured/web3.png"/></a> -->
+										<img class="image_fade" src="images/business/images/featured/web3.png"/>
+									</div>
+									<div class="fbox-desc">
+										<h3 class="nott ls0 t600">Web Design &amp; Development Services<span class="subtitle font-secondary t300 ls0">Make your online presence felt with intuitive Website Design &amp; ultra responsive design</span></h3>
+										<!-- <a href="home-web-development.html" class="button-link">Read More</a> -->
+									</div>
+								</div>
+							</div>
+							<div id="digital_marketing" class="col-lg-4 bottommargin-sm">
+								<div class="feature-box media-box fbox-bg">
+									<div class="fbox-media">
+										<!-- <a href="home-digital-marketing.html"><img class="image_fade" src="images/business/images/featured/seo3.png"/></a> -->
+										<img class="image_fade" src="images/business/images/featured/seo3.png"/>
+									</div>
+									<div class="fbox-desc">
+										<h3 class="nott ls0 t600">Digital Marketing<span class="subtitle font-secondary t300 ls0">We help brands to optimize their online presence &amp; performance.</span></h3>
+										<!-- <a href="home-digital-marketing.html" class="button-link">Read More</a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Features colomns -->
+                      <div class="clear"></div>
+					</div>
+				</div>
+                </div>
+
+
+				<!-- About Us
+				============================================= -->
+				<div id="about_us" class="section nopadding notopmargin nobg clearfix" style="border-top: 0px solid #EEE; border-bottom: 1px solid #EEE;">
+					  <div class="content-wrap nobottompadding notopmargin nobg" style="z-index: 1;">
+				        <div class="container topmargin clearfix">
+					     	<div class="heading-block center noborder" data-heading="A">
+						       <h3>About Us</h3>
+					        </div>
+				        </div>
+			          </div>
+					<div class="row common-height clearfix">
+                        <div class="col-lg-6 center col-padding" style="background: url('images/business/images/about-us/seo2.png') center center no-repeat; background-size: cover;">
+						</div>
+						<div class="col-lg-6 col-padding">
+							<div>
+								<!-- About Us Featured Boxes
+								============================================= -->
+								<div class="row clearfix">
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<i class="icon-et-globe"></i>
+											</div>
+											<h3>We Are</h3>
+											<p>
+												<b>O</b>ur team in <b>ADKA</b> builds <b>websites</b>, <b>Mobile Apps</b> & <b>branding & digital marketing</b> to upgrade your business and make it more accessible to <b>everyone</b>, bring a crafted and inspired <b>UI/UX</b> to every project we work on, which is why our <b>clients love us</b> and why they keep coming back.
+											    </br>
+                                                <b>O</b>ur team is <b>gurus</b> who <b>love</b> to share our <b>passion</b> with the rest of the world.
+                                                </br>
+                                                <b>W</b>e Love Technology 
+                                                </br>
+                                                <b>W</b>e adore Marketing.
+                                                </br>
+                                                <b>W</b>e Are Professionals You Can <b>Depend on US</b>.
+                                            </p>
+										</div>
+									</div>
+									<div class="col-lg-10 col-md-8 bottommargin">
+										<div class="feature-box fbox-plain">
+											<div class="fbox-icon">
+												<i class="icon-et-gears"></i>
+											</div>
+											<h3>Fully Customisable</h3>
+											<p>
+											   <b>W</b>e are focusing on <b>delivering high-performance</b> and scalable software products to different industries with <b>know how</b> to create the successful software product and helping you leverage the latest technologies to <b>Innovate Your BUSINESS!</b>
+											</br>
+											<b>W</b>e use working <b>prototypes</b> and visual design to <b>bring ideas</b> to life and ensure great interface for your users.
+											</br>
+                                            <b>W</b>e made that because we <b>love</b> what we do.
+                                            </br>
+                                            <b>W</b>e have deep understanding with the tech market so, <b>W</b>e can help you gain a <b>competitive advantage</b> by embracing the opportunities that technology offers.
+										    </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Our Works
+				============================================= -->
+				<div id="our_works" class="section nobg nobottommargin clearfix">
+					<div class="container clearfix">
+						<div class="heading-block center noborder" data-heading="O">
+							<h3 class="nott ls0">Our Works</h3>
+						</div>
+						<!-- Portfolio Filter
+						============================================= -->
+						<ul class="portfolio-filter style-2 center clearfix" data-container="#portfolio">
+							<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
+							<li><a href="#" data-filter=".pf-mobile-apps">Mobile Apps</a></li>
+							<li><a href="#" data-filter=".pf-websites">Websites</a></li>
+							<li><a href="#" data-filter=".pf-demos">Demos</a></li>
+							<li><a href="#" data-filter=".pf-media">Media</a></li>
+						</ul><!-- #portfolio-filter end -->
+					</div>
+
+					<!-- Portfolio Items
+					============================================= -->
+					<div id="portfolio" class="portfolio grid-container portfolio-nomargin clearfix">
+
+						<article class="portfolio-item pf-mobile-apps">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="images/business/images/portfolio/1.png" alt="ADKA">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										 <span>
+										 	<h3> 
+										 	<i class="fab fa-apple"></i><a href="https://itunes.apple.com/us/app/dar-alafta/id1119538483?ls=1&mt=8" target="_blank" > AppStore</a> 
+										    </br>
+										    </br>
+										    <i class="fab fa-google-play"></i> <a href="https://play.google.com/store/apps/details?id=com.dareleftaa" target="_blank"> GooglePlay</a>
+										    </h3>
+										</span>
+
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-demos">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="images/business/images/portfolio/2.png" alt="ADKA">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3> <i class="fas fa-lightbulb"></i> Concept</h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-websites">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="images/business/images/portfolio/3.png" alt="ADKA">
+								</a>
+								 <div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<span>
+										<h3>Tartoussieh Engineering & Trading Co.</h3>
+								        </br>
+										<h4>
+										    </br>
+											<a href="images/business/images/portfolio/3-tetco-home.jpg" target="_blank" ><i class="fas fa-palette"></i> Graphics</a>
+											</br>
+											</br>
+										    <a href="http://tetco.com.eg/" target="_blank"><i class="fas fa-link"></i> Live</a>
+										</h4>
+										</span>
+									</div>
+								</div> 
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-websites">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false" data-speed="400" data-pause="3000">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="#"><img src="images/business/images/portfolio/4-levetrina.png" alt="Open Imagination" target="_blank"></a></div>
+											<div class="slide"><a href="#"><img src="images/business/images/portfolio/4-levetrina-home.png" alt="ADKA" target="_blank"></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-overlay" data-lightbox="gallery">
+									<div class="portfolio-desc">
+										<h3>LeVetrina</h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide">
+												<a href="images/business/images/portfolio/5-0-scanlab.jpg" target="_blank"><img src="images/business/images/portfolio/5-0-scanlab.jpg" alt="ADKA"></a>
+											</div>
+											<div class="slide">
+												<a href="images/business/images/portfolio/5-1-scanlab.jpg" target="_blank"><img src="images/business/images/portfolio/5-1-scanlab.jpg" alt="ADKA"></a>
+											</div>
+											<div class="slide">
+												<a href="images/business/images/portfolio/5-2-scanlab.jpg" target="_blank"><img src="images/business/images/portfolio/5-2-scanlab.jpg" alt="ADKA"></a>
+											</div>
+											<div class="slide">
+												<a href="images/business/images/portfolio/5-3-scanlab.jpg" target="_blank"><img src="images/business/images/portfolio/5-3-scanlab.jpg" alt="ADKA"></a>
+											</div>
+											<div class="slide">
+												<a href="images/business/images/portfolio/5-4-scanlab.jpg" target="_blank"><img src="images/business/images/portfolio/5-4-scanlab.jpg" alt="ADKA"></a>
+											</div>
+											<div class="slide">
+												<a href="images/business/images/portfolio/5-5-scanlab.jpg" target="_blank"><img src="images/business/images/portfolio/5-5-scanlab.jpg" alt="ADKA"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-overlay" data-lightbox="gallery">
+									<div class="portfolio-desc">
+										<h3>Flyer & Printing</h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-websites" >
+							<div class="portfolio-image">
+								<img src="images/business/images/portfolio/6-evisa.png" alt="ADKA">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="https://www.evisagcc.com/evisa/" target="_blank"> <i class="fas fa-link"></i> link</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-demos">
+							<div class="portfolio-image">
+								<img src="images/business/images/portfolio/8.png" alt="ADKA">
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3> <i class="fas fa-lightbulb"></i> Concept</h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+					</div><!-- #portfolio end -->
+				</div>
+
+				<!-- Parallax Area
+				============================================= -->
+								<!-- Testimonials
+				============================================= -->
+<!--
+				<div class="section mt-0" style="background: url('images/business/images/sections/testimonials/testimonial_bg.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
+					<div class="container">
+						<div class="heading-block center noborder" data-heading="T">
+							<h3 class="nott ls0">Testimonials</h3>
+						</div>
+
+						<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">
+
+							<div class="oc-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="images/business/images/portfolio/1.png" alt="daree_liftaa Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
+										<div class="testi-meta">
+											Islam Elhalwany
+											<span>Dar Al-Ifta Al-missriyyah.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item">
+								<div class="testimonial">
+									<div class="testi-image">
+										<a href="#"><img src="images/business/images/sections/testimonials/5.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+										<div class="testi-meta">
+											Steve Jobs
+										<span>Apple Inc.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>  -->
+				<!-- #Testimonials end -->
 			</div>
 
+		</section><!-- #content end -->
+
+				<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container" id="contact_us">
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+<br/><h1><strong>Have an idea & want an technical partner? <br/></strong> we are here for you</h1>
+					   <div class="col_two_third">
+						<div class="col_one_third">
+							<div class="widget clearfix">
+								<div style="background: url('images/business/images/world-map.png') no-repeat center center; background-size: 100%;">
+									<address>
+										<a href="https://www.google.com/maps/place/The+Binary+by+Omniyat/@25.185394,55.2645773,16.54z/data=!4m5!3m4!1s0x0:0xa2db82f588c4c7fb!8m2!3d25.1872264!4d55.2665734" target="_blank">
+										<strong>UAE, Dubai</strong><br>
+										Al Abraj Street, Business Bay<br>
+										The Binary by Omniyat<br>
+										</a>
+									</address>
+									<div>
+									<abbr title="Phone Number"><strong><a href="tell:00971543233227"> <i class="icon-headphones"></i> +971 5432 33 22 7</a> </strong></abbr>
+									<br/>
+									<abbr title="Email Address"><strong><a href="mailto:info@adkatech.com" target="_top"> <i class="icon-envelope2"></i> info@adkatech.com</a></strong></abbr>
+									<br/>
+									<abbr title="Email Address"><strong><i class="icon-skype2"></i> AdkaTechOnSkype</strong></abbr>
+								    </div>
+								</div>
+							</div>
+						</div>
+                          
+						<div class="col_one_third">
+							<div class="widget clearfix">
+								<div style="background: url('images/business/images/world-map.png') no-repeat center center; background-size: 100%;">
+									<address>
+										<a href="https://www.google.com/maps/place/The+Hive+Offices/@30.0285941,31.4566465,17z/data=!4m8!1m2!2m1!1sPlot+185,+Second+District+City+Center,+The+5th+Settlement!3m4!1s0x145822c507fc4bfb:0x3b6b4b7c5b27748a!8m2!3d30.02872!4d31.4587742" target="_blank">
+										<strong>Egypt, Cairo</strong><br>
+									    Plot 185, Second District<br>
+									    City Center, The 5th Settlement<br>
+									    </a>
+									</address>
+									<div>
+									<abbr title="Phone Number"><strong><a href="tell:00201147228219"> <i class="icon-headphones"></i> +20114 7 22 8 21 9</a> </strong></abbr>
+									<br/>
+									<abbr title="Email Address"><strong><a href="mailto:info@adkatech.com" target="_top"> <i class="icon-envelope2"></i> info@adkatech.com</a></strong></abbr>
+									<br/>
+									<abbr title="Email Address"><strong><i class="icon-skype2"></i> AdkaTechOnSkype</strong></abbr>
+								    </div> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+<div class="col_one_third col_last">
+						<div class="widget clearfix">
+						    <img src="images/business/images/adkatech_logo_on_black_background_full.svg" alt="ADKA" class="footer-logo"/>
+						</div>
+					</div>
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
 			<div id="copyrights">
-				<div class="container center clearfix">
-					Copyright ADKA 2018 | All Rights Reserved
+				<div class="container clearfix">
+					<div class="col_half">
+						Copyrights &copy; 2019 All Rights Reserved by ADKA.
+					</div>
+					<!-- 
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+					</div>
+					-->
 				</div>
-			</div>
+			</div><!-- #copyrights end -->
 
 		</footer><!-- #footer end -->
 
@@ -171,12 +599,66 @@
 	<script src="js/functions.js"></script>
 
 	<script>
-
-		jQuery(document).ready( function($){
-			var xmasDate = new Date(2019, 11, 25);
-			$('#countdown-xmas').countdown({until: xmasDate});
+		// Owl Carousel Scripts
+		$('#oc-features').owlCarousel({
+			items: 1,
+			margin: 60,
+		    nav: true,
+		    navText: ['<i class="icon-line-arrow-left"></i>','<i class="icon-line-arrow-right"></i>'],
+		    dots: false,
+		    stagePadding: 30,
+		    responsive:{
+				768: { items: 2 },
+				1200: { stagePadding: 200 }
+			},
 		});
+	</script>
+	<script>
+		// Menu Focus Underline Scripts
+		//initial load to make Menu focus
+		document.getElementById("primary-menu-home").classList.add('active');
 
+		function resetUIForMenu () {
+			document.getElementById("primary-menu-home").classList.remove('active');
+			document.getElementById("primary-menu-what-we-do").classList.remove('active');
+			document.getElementById("primary-menu-about-us").classList.remove('active');
+			document.getElementById("primary-menu-Services").classList.remove('active');
+			document.getElementById("primary-menu-works-clients").classList.remove('active');
+		    // document.getElementById().classList.add('MyClass');
+			// if ( document.getElementById("MyElement").classList.contains('MyClass') )
+			// document.getElementById("MyElement").classList.toggle('MyClass');
+         }
+
+		$('#primary-menu-home').click(changeClassHome);
+		function changeClassHome(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-home").classList.add('active');
+        }
+
+        $('#primary-menu-what-we-do').click(changeClassWhatWeDo);
+		function changeClassWhatWeDo(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-what-we-do").classList.add('active');
+        }
+
+        $('#primary-menu-about-us').click(changeClassAboutUs);
+		function changeClassAboutUs(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-about-us").classList.add('active');
+        }
+
+		$('#primary-menu-Services').click(changeClassServices);
+		$('#secondary-menu-Services').click(changeClassServices);
+		function changeClassServices(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-Services").classList.add('active');
+        }
+
+        $('#primary-menu-works-clients').click(changeClassWorksClients);
+		function changeClassWorksClients(){
+          resetUIForMenu();
+          document.getElementById("primary-menu-works-clients").classList.add('active');
+        }
 	</script>
 
 </body>
